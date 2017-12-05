@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConstantFramework'
-  s.version          = '0.1.0'
+  s.version          = '0.1.6'
   s.summary          = 'ConstantFramework is Integrated with constant files which can be used in all the projects.'
 
 # This description is used to generate tags and improve search results.
@@ -39,5 +39,6 @@ ConstantFramework is Integrated with constant files which can be used in all the
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-    s.dependency NVActivityIndicatorView
+    s.dependency 'NVActivityIndicatorView'
+    s.dependency 'ReachabilitySwift', '~> 3'
 end

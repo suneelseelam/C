@@ -1,5 +1,11 @@
 PODS:
-  - ConstantFramework (0.1.0)
+  - ConstantFramework (0.1.6):
+    - NVActivityIndicatorView
+    - ReachabilitySwift (~> 3)
+  - NVActivityIndicatorView (4.0.1):
+    - NVActivityIndicatorView/Presenter (= 4.0.1)
+  - NVActivityIndicatorView/Presenter (4.0.1)
+  - ReachabilitySwift (3)
 
 DEPENDENCIES:
   - ConstantFramework (from `../`)
@@ -9,7 +15,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ConstantFramework: c19b4ff6dfde79e214ac8abc154bfdd1e8489124
+  ConstantFramework: 3aef7fb46493b30eb58b3c7807e692788c77ef59
+  NVActivityIndicatorView: 77ed6d7b571643e24899e7858bf9ae2ee4c21f31
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
 
 PODFILE CHECKSUM: a669c4960782b3bd9833957a193662b5e525207d
 
