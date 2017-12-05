@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ConstantFramework_Example' do
+  pod 'ConstantFramework', :path => '../'
+
+  target 'ConstantFramework_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
