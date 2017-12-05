@@ -1,0 +1,6 @@
+framework module ConstantFramework {
+  umbrella header "ConstantFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

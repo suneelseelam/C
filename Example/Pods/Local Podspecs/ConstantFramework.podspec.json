@@ -1,0 +1,22 @@
+{
+  "name": "ConstantFramework",
+  "version": "0.1.0",
+  "summary": "A short description of ConstantFramework.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/suneelseelam/ConstantFramework",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "suneelseelam": "suneelseelam@tridentnets.in"
+  },
+  "source": {
+    "git": "https://github.com/suneelseelam/ConstantFramework.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ConstantFramework/Classes/**/*"
+}
