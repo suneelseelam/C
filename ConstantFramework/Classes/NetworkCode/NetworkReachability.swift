@@ -11,7 +11,7 @@ import ReachabilitySwift
 
 public class Reachablilityswift {
     
-    private static let _instance              = Reachablilityswift()
+    public static let _instance              = Reachablilityswift()
     
     let reachability                          = Reachability()
     
