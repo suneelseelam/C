@@ -16,9 +16,9 @@ public class AlertViewController : NSObject{
         let dialogMessage = UIAlertController(title: title, message: Message , preferredStyle: .alert)
         
         // Create OK button with action handler
-        let ok = UIAlertAction(title: "OK", style: .default, handler: okAction)
+        let ok = UIAlertAction(title: okActionTitle, style: .default, handler: okAction)
         // Create Cancel button with action handler
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel,handler: cancelAction)
+        let cancel = UIAlertAction(title: cancleActionTitle, style: .cancel,handler: cancelAction)
         //Add OK and Cancel button to dialog message
         dialogMessage.addAction(ok)
         dialogMessage.addAction(cancel)
