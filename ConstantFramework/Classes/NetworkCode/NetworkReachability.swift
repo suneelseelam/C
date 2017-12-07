@@ -15,7 +15,7 @@ public class Reachablilityswift {
     
     let reachability                          = Reachability()
     
-    var networkConnectionBool                 : Bool = true
+    public var networkConnectionBool                 : Bool = true
     
    public static var Instance                       : Reachablilityswift {
         return _instance
