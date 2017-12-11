@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import ConstantFramework
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Reachablilityswift.Instance.callInternetConnection()
+        if Reachablilityswift.Instance.networkConnectionBool == true{
+            print("connected")
+        }else{ print("not connected")}
     }
 
     override func didReceiveMemoryWarning() {

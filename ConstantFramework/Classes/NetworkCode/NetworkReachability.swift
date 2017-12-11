@@ -26,18 +26,17 @@ public class Reachablilityswift {
   public func callInternetConnection() {
         
     NotificationCenter.default.addObserver(self, selector: #selector(self.reachabilityChanged),name: NSNotification.Name.reachabilityChanged,object: reachability)
-        reachability.startNotifier()
-//        do{
-//            try reachability.startNotifier()
-//        }catch{
-//            print("could not start reachability notifier")
-//        }
+        do{
+            try reachability?.startNotifier()
+        }catch{
+            print("could not start reachability notifier")
+        }
     }
     
     //MARK:- Stop Call Internet Connection
     
   public  func stopCallInternetConnection(){
-    reachability.stopNotifier()
+    reachability?.stopNotifier()
         NotificationCenter.default.removeObserver(self,
                                                   name: NSNotification.Name.reachabilityChanged,
                                                   object: reachability)
@@ -46,19 +45,16 @@ public class Reachablilityswift {
     }
     
     @objc func reachabilityChanged(note: Notification) {
-        
+      
         let reachability = note.object as! Reachability
-        
-        if reachability.isReachable(){
-            if reachability.isReachableViaWiFi(){
-                 print("Reachable via WiFi")
-            }else{
-                 print("Reachable via Cellular")
-            }
-             networkConnectionBool = true
+        if reachability.connection == .wifi{
+              print("Reachable via WiFi")
+               networkConnectionBool = true
+        }else if reachability.connection == .cellular{
+              print("Reachable via Cellular")
+               networkConnectionBool = true
         }else{
-            print("Network not reachable")
-            networkConnectionBool = false
+             networkConnectionBool = false
         }
     }
 }
