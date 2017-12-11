@@ -1,6 +1,6 @@
 {
   "name": "ConstantFramework",
-  "version": "0.1.6",
+  "version": "0.1.11",
   "summary": "ConstantFramework is Integrated with constant files which can be used in all the projects.",
   "description": "ConstantFramework is Integrated with constant files which can be used in all the projects like validations , Device types and Loaders etc..!.",
   "homepage": "https://github.com/suneelseelam/ConstantFramework",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/suneelseelam/ConstantFramework.git",
-    "tag": "0.1.6"
+    "tag": "0.1.11"
   },
   "platforms": {
     "ios": "8.0"
@@ -24,8 +24,8 @@
     "NVActivityIndicatorView": [
 
     ],
-    "ReachabilitySwift": [
-      "~> 3"
+    "Reachability": [
+
     ]
   }
 }
